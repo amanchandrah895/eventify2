@@ -1,0 +1,13 @@
+name: Lint Code
+
+on: [push]  # Runs every time you push code
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest  # Uses a free GitHub Linux machine
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Copies your code to the workflow
+
+      - name: Fake linting step
+        run: echo "Linting would happen here. This is just a demo for college project."
