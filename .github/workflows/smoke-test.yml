@@ -1,0 +1,11 @@
+name: Smoke Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fake smoke test
+        run: echo "Smoke test passed! This is just for demo purposes."
